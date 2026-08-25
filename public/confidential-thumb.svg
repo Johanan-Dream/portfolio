@@ -1,0 +1,20 @@
+<svg width="480" height="270" viewBox="0 0 480 270" xmlns="http://www.w3.org/2000/svg">
+  <rect width="480" height="270" fill="#faf8f2"/>
+  <rect x="60" y="27" width="360" height="216" rx="10" fill="#ffffff" stroke="#ddd6c4" stroke-width="1.5"/>
+  <line x1="60" y1="63" x2="420" y2="63" stroke="#ddd6c4" stroke-width="1.5"/>
+  <circle cx="80" cy="45" r="5" fill="#ddd6c4"/>
+  <circle cx="98" cy="45" r="5" fill="#ddd6c4"/>
+  <circle cx="116" cy="45" r="5" fill="#ddd6c4"/>
+  <rect x="298" y="34" width="112" height="22" fill="#1a1818"/>
+  <text x="354" y="49" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#faf8f2" text-anchor="middle" letter-spacing="1">CONFIDENTIAL</text>
+  <rect x="84" y="90" width="160" height="9" rx="4.5" fill="#ede8db"/>
+  <rect x="84" y="110" width="200" height="9" rx="4.5" fill="#ede8db"/>
+  <rect x="84" y="130" width="120" height="9" rx="4.5" fill="#ede8db"/>
+  <rect x="84" y="158" width="80" height="24" rx="6" fill="#ede8db"/>
+  <rect x="176" y="158" width="80" height="24" rx="6" fill="#ede8db"/>
+  <circle cx="240" cy="150" r="48" fill="#ffffff" stroke="#1a1818" stroke-width="1.5"/>
+  <path d="M226 146v-10a14 14 0 0 1 28 0v10" fill="none" stroke="#1a1818" stroke-width="4" stroke-linecap="round"/>
+  <rect x="220" y="146" width="40" height="30" rx="5" fill="#1a1818"/>
+  <circle cx="240" cy="158" r="4" fill="#faf8f2"/>
+  <rect x="238" y="160" width="4" height="9" fill="#faf8f2"/>
+</svg>
