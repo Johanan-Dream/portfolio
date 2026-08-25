@@ -15,3 +15,7 @@
 
 # TypeScript
 *.tsbuildinfo
+
+# local career and recruitment analysis documents
+/경력_프로젝트_정리본.md
+/채용공고_1번_분석.md
