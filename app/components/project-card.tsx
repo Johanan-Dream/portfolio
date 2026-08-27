@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { ProjectThumb } from "./project-thumb";
-import { projects, teamLabel, type Project } from "../portfolio-data";
+import { ProjectSlideshow } from "./project-slideshow";
+import { projects, type Project } from "../portfolio-data";
 
 export function ProjectDetail({ project }: { project: Project }) {
   const index = projects.findIndex((p) => p.number === project.number);
   const next = projects[(index + 1) % projects.length];
-  const composition = project.category === "company" ? (teamLabel(project.team) ?? "Company") : "Personal";
+  const composition = project.category === "company" ? "Company" : "Personal";
 
   return <article className="project-detail">
     <div className="project-detail-header">
@@ -14,10 +15,7 @@ export function ProjectDetail({ project }: { project: Project }) {
       <time>{project.period}</time>
     </div>
 
-    <div className="project-thumb">
-      <ProjectThumb project={project}/>
-      {project.link && <a className="project-thumb-link" href={project.link} target="_blank" rel="noreferrer">프로젝트 보기 ↗</a>}
-    </div>
+    <ProjectSlideshow project={project}/>
 
     <p className="project-summary">{project.summary}</p>
 

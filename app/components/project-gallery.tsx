@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ProjectThumb } from "./project-thumb";
-import { teamLabel, type Project } from "../portfolio-data";
+import type { Project } from "../portfolio-data";
 
 const FILTERS = [
   { key: "all", label: "All" },
@@ -23,7 +23,6 @@ function matches(project: Project, key: FilterKey) {
 
 export function ProjectGallery({ projects }: { projects: Project[] }) {
   const [filter, setFilter] = useState<FilterKey>("all");
-  const featured = projects.find((p) => p.featured);
 
   const counts = Object.fromEntries(
     FILTERS.map((f) => [f.key, projects.filter((p) => matches(p, f.key)).length]),
@@ -33,16 +32,6 @@ export function ProjectGallery({ projects }: { projects: Project[] }) {
 
   return (
     <>
-      {featured && (
-        <Link href={`/work/${featured.slug}`} className="featured-project">
-          <div className="featured-project-thumb"><ProjectThumb project={featured}/></div>
-          <div className="featured-project-info">
-            <span>Featured Project</span>
-            <h3>{featured.title}</h3>
-            <span className="featured-project-cta">프로젝트 보기 ↗</span>
-          </div>
-        </Link>
-      )}
       <div className="filter-tabs" role="tablist" aria-label="프로젝트 필터">
         {FILTERS.map((f) => (
           <button
@@ -63,7 +52,7 @@ export function ProjectGallery({ projects }: { projects: Project[] }) {
             <div className="project-tile-thumb"><ProjectThumb project={project}/></div>
             <div className="project-tile-meta">
               <h3>{project.title}</h3>
-              <p>{project.category === "company" ? "Company" : "Personal"}{teamLabel(project.team) && ` · ${teamLabel(project.team)}`}</p>
+              <p>{project.category === "company" ? "Company" : "Personal"}</p>
             </div>
           </Link>
         ))}
