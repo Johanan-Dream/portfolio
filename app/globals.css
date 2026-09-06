@@ -359,7 +359,8 @@ a {
   display: block;
 }
 .project-tile-thumb img.image-contain,
-.project-thumb img.image-contain {
+.project-thumb img.image-contain,
+.project-section-image img.image-contain {
   object-fit: contain;
   background: #f8faff;
 }
