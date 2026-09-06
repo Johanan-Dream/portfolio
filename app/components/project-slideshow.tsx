@@ -9,7 +9,7 @@ export function ProjectSlideshow({ project }: { project: Project }) {
   const [active, setActive] = useState(0);
 
   return <div className="project-thumb project-slideshow">
-    {images.length ? <img src={images[active]} alt={`${project.title} 화면 ${active + 1}`}/> : <ProjectThumb project={project}/>} 
+    {images.length ? <img className={project.imageFit === "contain" ? "image-contain" : undefined} src={images[active]} alt={`${project.title} 화면 ${active + 1}`}/> : <ProjectThumb project={project}/>}
     {images.length > 1 && <>
       <button type="button" className="slide-button slide-prev" onClick={() => setActive((current) => (current - 1 + images.length) % images.length)} aria-label="이전 이미지">←</button>
       <button type="button" className="slide-button slide-next" onClick={() => setActive((current) => (current + 1) % images.length)} aria-label="다음 이미지">→</button>
