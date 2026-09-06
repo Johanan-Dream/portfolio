@@ -36,7 +36,7 @@ export function ProjectDetail({ project }: { project: Project }) {
               <h4>{detail.title}</h4>
               <p>{detail.description}</p>
             </div>
-            {detail.image && <div className="project-section-image"><img src={detail.image} alt={detail.title}/></div>}
+            {detail.image && <div className="project-section-image"><img className={project.imageFit === "contain" ? "image-contain" : undefined} src={detail.image} alt={detail.title}/></div>}
           </div>
         </section>
       ))}
