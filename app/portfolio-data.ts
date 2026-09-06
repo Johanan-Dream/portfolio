@@ -3,7 +3,7 @@ export type Project = {
   scope: string; stack: string[];
   details: { title: string; description: string; image?: string }[];
   featured?: boolean;
-  category: "personal" | "company";
+  category: "personal" | "company" | "team";
   team?: number;
   image?: string;
   images?: string[];

@@ -16,9 +16,7 @@ type FilterKey = (typeof FILTERS)[number]["key"];
 
 function matches(project: Project, key: FilterKey) {
   if (key === "all") return true;
-  if (key === "personal") return project.category === "personal";
-  if (key === "team") return project.category === "company" && (project.team ?? 1) > 1;
-  return project.category === "company" && (project.team ?? 1) <= 1;
+  return project.category === key;
 }
 
 export function ProjectGallery({ projects }: { projects: Project[] }) {
@@ -52,7 +50,7 @@ export function ProjectGallery({ projects }: { projects: Project[] }) {
             <div className="project-tile-thumb"><ProjectThumb project={project}/></div>
             <div className="project-tile-meta">
               <h3>{project.title}</h3>
-              <p>{project.category === "company" ? "Company" : "Personal"}</p>
+              <p>{project.category === "company" ? "Company" : project.category === "team" ? "Team" : "Personal"}</p>
             </div>
           </Link>
         ))}

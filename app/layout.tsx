@@ -4,11 +4,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://portfolio-ivory-eta-29.vercel.app"),
-  title: "김혜미 | AX 풀스택 빌더 포트폴리오",
-  description: "AI를 활용해 기획부터 배포까지 완성하는 AX 풀스택 빌더 김혜미의 포트폴리오",
+  title: "김혜미 | Backend Developer · AI-Native Builder",
+  description: "Java·Spring 백엔드 실무를 중심으로 서비스 전체를 이해하고 AI를 활용해 구현 범위를 넓혀가는 개발자 김혜미의 포트폴리오",
   openGraph: {
-    title: "김혜미 | AX 풀스택 빌더 포트폴리오",
-    description: "AI를 활용해 기획부터 배포까지 완성하는 AX 풀스택 빌더 김혜미의 포트폴리오",
+    title: "김혜미 | Backend Developer · AI-Native Builder",
+    description: "Java·Spring 백엔드 실무를 중심으로 서비스 전체를 이해하고 AI를 활용해 구현 범위를 넓혀가는 개발자 김혜미의 포트폴리오",
     type: "website",
     locale: "ko_KR",
     url: "https://portfolio-ivory-eta-29.vercel.app",
@@ -18,14 +18,14 @@ export const metadata: Metadata = {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "김혜미 AX 풀스택 빌더 포트폴리오",
+        alt: "김혜미 Backend Developer · AI-Native Builder 포트폴리오",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "김혜미 | AX 풀스택 빌더 포트폴리오",
-    description: "AI를 활용해 기획부터 배포까지 완성하는 AX 풀스택 빌더 김혜미의 포트폴리오",
+    title: "김혜미 | Backend Developer · AI-Native Builder",
+    description: "Java·Spring 백엔드 실무를 중심으로 서비스 전체를 이해하고 AI를 활용해 구현 범위를 넓혀가는 개발자 김혜미의 포트폴리오",
     images: ["/opengraph-image"],
   },
   icons: {
