@@ -358,6 +358,11 @@ a {
   object-fit: cover;
   display: block;
 }
+.project-tile-thumb img.image-contain,
+.project-thumb img.image-contain {
+  object-fit: contain;
+  background: #f8faff;
+}
 .project-tile-meta {
   padding: 14px 16px;
   border-top: 1px solid var(--line);
