@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "김혜미 AX 풀스택 빌더 포트폴리오";
+export const alt = "김혜미 Backend Developer · AI-Native Builder 포트폴리오";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -29,7 +29,7 @@ export default function Image() {
         }}
       >
         <div style={{ display: "flex", justifyContent: "space-between", fontSize: 18, letterSpacing: 2, color: "#77716d" }}>
-          <span>KIM HYEMI · AX FULL-STACK BUILDER</span>
+          <span>KIM HYEMI · BACKEND DEVELOPER · AI-NATIVE BUILDER</span>
           <span>PORTFOLIO · 2026</span>
         </div>
         <div style={{ position: "absolute", inset: 0, display: "flex", opacity: 0.28 }}>
@@ -47,7 +47,7 @@ export default function Image() {
           <span style={{ fontWeight: 400, marginLeft: 120 }}>작동하는 서비스로.</span>
         </div>
         <div style={{ display: "flex", marginTop: "auto", fontSize: 24, color: "#625d59", letterSpacing: 0.5 }}>
-          AI를 활용해 기획부터 배포까지 완성하는 AX 풀스택 빌더
+          백엔드 실무를 중심으로 AI를 활용해 구현 범위를 넓혀가는 개발자
         </div>
       </div>
     ),
